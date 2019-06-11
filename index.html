@@ -31,8 +31,12 @@
         </div>
     </div>
 </div>
-<script src="layui/layui/layui.js"></script>
+<script type="text/javascript">
+    document.write("<script src='layui/layui/layui.js?timestamp='"+new Date().valueOf()+">"+"<"+"/script>");
+</script>
+
 <script>
+
     layui.use('carousel', function () {
         var carousel = layui.carousel;
         //建造实例
